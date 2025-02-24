@@ -21,17 +21,17 @@ const requestStructure1 = {
 const requestStructure2 = {
   sourceCorrelationId: "string",
   sor: "string",
-  account: "string",
+  services: "object",
+  assetListRequest: {
+    requestedAssets: "string"
+  },
   address: {
     uprn: "string",
     addressLines: "object",
     postTown: "string",
     postCode: "string"
   },
-  assetListRequest: {
-    requestedAssets: "string"
-  },
-  services: "object"
+  account: "string",
 };
 
 // Function to strictly validate request structure
