@@ -5,55 +5,9 @@ const PORT = process.env.PORT || 3000;
 // Middleware to parse JSON
 app.use(express.json());
 
-// Expected request structures
-const requestStructure1 = {
-  sourceCorrelationId: "string",
-  sor: "string",
-  account: "string",
-  address: {
-    uprn: "string",
-    addressLines: "object",
-    postTown: "string",
-    postCode: "string"
-  }
-};
-
-const requestStructure2 = {
-  sourceCorrelationId: "string",
-  sor: "string",
-  services: "object",
-  assetListRequest: {
-    requestedAssets: "string"
-  },
-  address: {
-    uprn: "string",
-    addressLines: "object",
-    postTown: "string",
-    postCode: "string"
-  },
-  account: "string",
-};
-
-// Function to strictly validate request structure
-const validateRequest = (body, expected) => {
-  const bodyKeys = Object.keys(body).sort();
-  const expectedKeys = Object.keys(expected).sort();
-
-  if (JSON.stringify(bodyKeys) !== JSON.stringify(expectedKeys)) {
-    return false;
-  }
-
-  return bodyKeys.every((key) => {
-    if (typeof expected[key] === "object" && !Array.isArray(expected[key])) {
-      return validateRequest(body[key], expected[key]);
-    }
-    return typeof body[key] === expected[key];
-  });
-};
-
 // Endpoint to handle Salesforce request
 app.post("/getAssetandServiceDetails", (req, res) => {
-  if (validateRequest(req.body, requestStructure1)) {
+  if (req.body.services == null) {
     // Response for requestStructure1
     return res.status(200).json({
       sourceCorrelationId: req.body.sourceCorrelationId,
@@ -63,7 +17,7 @@ app.post("/getAssetandServiceDetails", (req, res) => {
       lastName: "",
       emailId: ""
     });
-  } else if (validateRequest(req.body, requestStructure2)) {
+  } else if (req.body.services!=null) {
     // Response for requestStructure2
     return res.status(200).json({
         "sourceCorrelationId": "xxxxxxx",
@@ -660,6 +614,78 @@ app.post("/getAssetandServiceDetails", (req, res) => {
     return res.status(400).json({ message: "Invalid request structure" });
   }
 });
+
+// Endpoint to handle getServiceStatus request
+app.post("/getServiceStatus", (req, res) => {
+  if (req.body.services!=null) {
+    // Response for request
+    return res.status(200).json(
+      {
+        "sourceCorrelationId":"TTB-001",
+         "services": [
+              {
+                 "serviceType": "IAS",
+                 "serviceIdentifier": "123456789",
+                 "status": "A"
+              },
+              {
+                 "serviceType": "NBICS",
+                 "serviceIdentifier": "01011113334",
+                 "status": "AC"
+              },
+              {
+                 "serviceType": "NBICS",
+                 "serviceIdentifier": "01011113335",
+                 "status": "A"
+              },
+              {
+                 "serviceType": "IAS",
+                 "serviceIdentifier": "123456691",
+                "status": "AC"
+              },
+              {
+                 "serviceType": "NBICS",
+                 "serviceIdentifier": "01011113337",
+                "status": "Inactive"
+              },
+              {
+                 "serviceType": "NBICS",
+                 "serviceIdentifier": "01011113338",
+                "status": "PD"
+              },
+              {
+                 "serviceType": "IAS",
+                 "serviceIdentifier": "123456892",
+                "status": "A"
+              },
+              {
+                 "serviceType": "NBICS",
+                 "serviceIdentifier": "01011113336",
+                "status": "AC"
+              },
+              {
+                 "serviceType": "IAS",
+                 "serviceIdentifier": "123456893",
+                "status": "Inactive"
+              },
+              {
+                 "serviceType": "NBICS",
+                 "serviceIdentifier": "01011113339",
+                "status": "Inactive"
+              }
+           ]
+        }        
+    );
+  }
+});
+
+//Endpoint to handle order request
+app.post("/getOrderConfirmation", (req, res) => {
+  if(req.body!=null){
+    return res.status(202).json();
+  }
+});
+
 
 // Start server
 app.listen(PORT, () => {
