@@ -28,588 +28,687 @@ app.post("/getAssetandServiceDetails", (req, res) => {
         "lastName": "Batham",
         "emailId": "saransh.batham@infosys.com",
         "assetBlock": {
-            "siteDetails": [
+          "siteDetails": [
+            {
+              "siteAddress": "39 Cypress Street, Glasgow, SW1P 3UX",
+              "accountDetails": [
                 {
-                    "siteAddress": "39 Cypress Street, Glasgow, SW1P 3UX",
-                    "accountDetails": [
+                  "accountNumber": "123456789",
+                  "serviceDetails": [
+                    {
+                      "data": [
                         {
-                            "accountNumber": "123456789",
-                            "serviceDetails": [
-                                {
-                                    "data": [
-                                        {
-                                            "serviceIdentifier": "123456789",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "FBBEL17",
-                                                    "productName": "Voom 400 + BEL 21CV",
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "4GBUVOM",
-                                                    "productName": "4G Back-up Service",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "FAIP105",
-                                                    "productName": "5 static IP addresses",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "voice": [
-                                        {
-                                            "serviceIdentifier": "01234567891",
-                                            "cupId": "",
-                                            "isPrimary": "Y",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "serviceIdentifier": "01234567892",
-                                            "cupId": "",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                          "serviceIdentifier": "123456789",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEL17",
+                              "productName": "Voom 400 + BEL 21CV",
+                              "servicetype": "Core",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "voice": [
+                        {
+                          "serviceIdentifier": "01234567891",
+                          "cupId": "",
+                          "isPrimary": "Y",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "servicetype": "Core",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            }
+                          ]
                         },
                         {
-                            "accountNumber": "123456790",
-                            "serviceDetails": [
-                                {
-                                    "data": [
-                                        {
-                                            "serviceIdentifier": "123456790",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "FBBEC19",
-                                                    "productName": "Voom 800",
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "4GBUVOM",
-                                                    "productName": "4G Back-up Service",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "FAIP105",
-                                                    "productName": "5 static IP addresses",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                          "serviceIdentifier": "01234567892",
+                          "cupId": "",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "servicetype": "Core",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            }
+                          ]
                         }
-                    ]
+                      ]
+                    }
+                  ]
                 },
                 {
-                    "siteAddress": "322 Cheshunt Mews, Glasgow, SW2R 5AF",
-                    "accountDetails": [
+                  "accountNumber": "123456790",
+                  "serviceDetails": [
+                    {
+                      "data": [
                         {
-                            "accountNumber": "123456791",
-                            "serviceDetails": [
-                                {
-                                    "data": [
-                                        {
-                                            "serviceIdentifier": "123456791",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "FBBEL20",
-                                                    "productName": "Voom Gig1 + BEL 21CV",
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "4GBUVOM",
-                                                    "productName": "4G Back-up Service",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "FAIP105",
-                                                    "productName": "5 static IP addresses",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "voice": [
-                                        {
-                                            "serviceIdentifier": "01234567893",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "cupId": "",
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "cupId": "",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "cupId": "",
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "Active"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                          "serviceIdentifier": "123456790",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEC19",
+                              "productName": "Voom 800",
+                              "servicetype": "Core",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            }
+                          ]
                         }
-                    ]
+                      ]
+                    }
+                  ]
                 }
-            ]
+              ]
+            },
+            {
+              "siteAddress": "322 Cheshunt Mews, Glasgow, SW2R 5AF",
+              "accountDetails": [
+                {
+                  "accountNumber": "123456791",
+                  "serviceDetails": [
+                    {
+                      "data": [
+                        {
+                          "serviceIdentifier": "123456791",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEL20",
+                              "productName": "Voom Gig1 + BEL 21CV",
+                              "servicetype": "Core",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "voice": [
+                        {
+                          "serviceIdentifier": "01234567893",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "cupId": "",
+                              "servicetype": "Core",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "cupId": "",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "cupId": "",
+                              "servicetype": "Add-On",
+                              "serviceStatus": "Active"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         "serviceBlock": {
-            "siteDetails": [
+          "siteDetails": [
+            {
+              "siteAddress": "39 Cypress Street, Glasgow, SW1P 3UX",
+              "accountDetails": [
                 {
-                    "siteAddress": "39 Cypress Street, Glasgow, SW1P 3UX",
-                    "accountDetails": [
+                  "accountNumber": "123456789",
+                  "contractstartdate": "12/02/2023",
+                  "contractTerm": 24,
+                  "billingSystem": "RBM/ICOMS",
+                  "areaReference": "31",
+                  "serviceDetails": [
+                    {
+                      "data": [
                         {
-                            "accountNumber": "123456789",
-                            "contractstartdate": "12/02/2023",
-                            "contractTerm": 24,
-                            "billingSystem": "RBM/ICOMS",
-                            "areaReference": "31",
-                            "serviceDetails": [
-                                {
-                                    "data": [
-                                        {
-                                            "serviceIdentifier": "123456789",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "FBBEL17",
-                                                    "productName": "Voom 400 + BEL 21CV",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 40,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "A"
-                                                },
-                                                {
-                                                    "serviceCode": "4GBUVOM",
-                                                    "productName": "4G Back-up Service",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 0,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "FAIP105",
-                                                    "productName": "5 static IP addresses",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 7,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "voice": [
-                                        {
-                                            "serviceIdentifier": "01011113334",
-                                            "cupId": "",
-                                            "isPrimary": "Y",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 0,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "serviceIdentifier": "01011113335",
-                                            "cupId": "",
-                                            "isPrimary": "N",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 27.5,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                          "serviceIdentifier": "123456789",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEL17",
+                              "productName": "Voom 400 + BEL 21CV",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 40,
+                              "servicetype": "Core",
+                              "serviceStatus": "A"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 7,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "voice": [
+                        {
+                          "serviceIdentifier": "01011113334",
+                          "cupId": "",
+                          "isPrimary": "Y",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Core",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            }
+                          ]
                         },
                         {
-                            "accountNumber": "123456691",
-                            "contractstartdate": "12/02/2023",
-                            "contractTerm": 24,
-                            "billingSystem": "RBM/ICOMS",
-                            "areaReference": "32",
-                            "serviceDetails": [
-                                {
-                                    "data": [
-                                        {
-                                            "serviceIdentifier": "123456691",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "FBBEC19",
-                                                    "productName": "Voom 800",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 51,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "4GBUVOM",
-                                                    "productName": "4G Back-up Service",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 7,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "FAIP105",
-                                                    "productName": "5 static IP addresses",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "voice": [
-                                        {
-                                            "serviceIdentifier": "01011113337",
-                                            "cupId": "",
-                                            "isPrimary": "Y",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 0,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "A"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "A"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "serviceIdentifier": "01011113338",
-                                            "cupId": "",
-                                            "isPrimary": "N",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 27.5,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "A"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "AC"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                          "serviceIdentifier": "01011113335",
+                          "cupId": "",
+                          "isPrimary": "N",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 27.5,
+                              "servicetype": "Core",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            }
+                          ]
                         }
-                    ]
+                      ]
+                    },
+                    {
+                      "data": [
+                        {
+                          "serviceIdentifier": "4574930295",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEL17",
+                              "productName": "Voom 400 + BEL 21CV",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 40,
+                              "servicetype": "Core",
+                              "serviceStatus": "PI"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "PI"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 7,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "PI"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "voice": [
+                        {
+                          "serviceIdentifier": "01011113341",
+                          "cupId": "",
+                          "isPrimary": "Y",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Core",
+                              "serviceStatus": "DI"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "DI"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "DI"
+                            }
+                          ]
+                        },
+                        {
+                          "serviceIdentifier": "01011113335",
+                          "cupId": "",
+                          "isPrimary": "N",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 27.5,
+                              "servicetype": "Core",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                    "siteAddress": "322 Cheshunt Mews, Glasgow, SW2R 5AF",
-                    "accountDetails": [
+                  "accountNumber": "123456691",
+                  "contractstartdate": "12/02/2023",
+                  "contractTerm": 24,
+                  "billingSystem": "RBM/ICOMS",
+                  "areaReference": "32",
+                  "serviceDetails": [
+                    {
+                      "data": [
                         {
-                            "accountNumber": "123456892",
-                            "contractstartdate": "12/02/2023",
-                            "contractTerm": 24,
-                            "billingSystem": "RBM/ICOMS",
-                            "areaReference": "33",
-                            "serviceDetails": [
-                                {
-                                    "data": [
-                                        {
-                                            "serviceIdentifier": "123456892",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "FBBEL20",
-                                                    "productName": "Voom Gig1 + BEL 21CV",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 67,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "CN"
-                                                },
-                                                {
-                                                    "serviceCode": "4GBUVOM",
-                                                    "productName": "4G Back-up Service",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 0,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "CN"
-                                                },
-                                                {
-                                                    "serviceCode": "FAIP105",
-                                                    "productName": "5 static IP addresses",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "CN"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "voice": [
-                                        {
-                                            "serviceIdentifier": "01011113336",
-                                            "cupId": "",
-                                            "isPrimary": "Y",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 0,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "CT"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "CT"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "CT"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                          "serviceIdentifier": "123456691",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEC19",
+                              "productName": "Voom 800",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 51,
+                              "servicetype": "Core",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 7,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            }
+                          ]
                         }
-                    ]
-                },
-                {
-                    "siteAddress": "322 Cheshunt Mews, Glasgow, SW2R 5AF",
-                    "accountDetails": [
+                      ]
+                    },
+                    {
+                      "voice": [
                         {
-                            "accountNumber": "123456892",
-                            "contractstartdate": "12/02/2023",
-                            "contractTerm": 24,
-                            "billingSystem": "RBM/ICOMS",
-                            "areaReference": "33",
-                            "serviceDetails": [
-                                {
-                                    "data": [
-                                        {
-                                            "serviceIdentifier": "123456893",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "FBBEL20",
-                                                    "productName": "Voom Gig1 + BEL 21CV",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 67,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "PD"
-                                                },
-                                                {
-                                                    "serviceCode": "4GBUVOM",
-                                                    "productName": "4G Back-up Service",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 0,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "PR"
-                                                },
-                                                {
-                                                    "serviceCode": "FAIP105",
-                                                    "productName": "5 static IP addresses",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "PI"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "voice": [
-                                        {
-                                            "serviceIdentifier": "01011113339",
-                                            "cupId": "",
-                                            "isPrimary": "Y",
-                                            "services": [
-                                                {
-                                                    "serviceCode": "BELBUEX",
-                                                    "productName": "BEL 21CV Line Rental",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 0,
-                                                    "servicetype": "Core",
-                                                    "serviceStatus": "DI"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELICB",
-                                                    "productName": "Call Barring Incoming",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "NP"
-                                                },
-                                                {
-                                                    "serviceCode": "BBELCDR",
-                                                    "productName": "Admin Call Divert",
-                                                    "billingStartDate": "DD-MM-YYYY",
-                                                    "MRC": 5,
-                                                    "servicetype": "Add-On",
-                                                    "serviceStatus": "PD"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
+                          "serviceIdentifier": "01011113337",
+                          "cupId": "",
+                          "isPrimary": "Y",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Core",
+                              "serviceStatus": "A"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "A"
+                            }
+                          ]
+                        },
+                        {
+                          "serviceIdentifier": "01011113338",
+                          "cupId": "",
+                          "isPrimary": "N",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 27.5,
+                              "servicetype": "Core",
+                              "serviceStatus": "A"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "AC"
+                            }
+                          ]
                         }
-                    ]
+                      ]
+                    }
+                  ]
                 }
-            ]
+              ]
+            },
+            {
+              "siteAddress": "322 Cheshunt Mews, Glasgow, SW2R 5AF",
+              "accountDetails": [
+                {
+                  "accountNumber": "123456892",
+                  "contractstartdate": "12/02/2023",
+                  "contractTerm": 24,
+                  "billingSystem": "RBM/ICOMS",
+                  "areaReference": "33",
+                  "serviceDetails": [
+                    {
+                      "data": [
+                        {
+                          "serviceIdentifier": "123456892",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEL20",
+                              "productName": "Voom Gig1 + BEL 21CV",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 67,
+                              "servicetype": "Core",
+                              "serviceStatus": "CN"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "CN"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "CN"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "voice": [
+                        {
+                          "serviceIdentifier": "01011113336",
+                          "cupId": "",
+                          "isPrimary": "Y",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Core",
+                              "serviceStatus": "CT"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "CT"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "CT"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "siteAddress": "322 Cheshunt Mews, Glasgow, SW2R 5AF",
+              "accountDetails": [
+                {
+                  "accountNumber": "123456892",
+                  "contractstartdate": "12/02/2023",
+                  "contractTerm": 24,
+                  "billingSystem": "RBM/ICOMS",
+                  "areaReference": "33",
+                  "serviceDetails": [
+                    {
+                      "data": [
+                        {
+                          "serviceIdentifier": "123456893",
+                          "services": [
+                            {
+                              "serviceCode": "FBBEL20",
+                              "productName": "Voom Gig1 + BEL 21CV",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 67,
+                              "servicetype": "Core",
+                              "serviceStatus": "PD"
+                            },
+                            {
+                              "serviceCode": "4GBUVOM",
+                              "productName": "4G Back-up Service",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "PR"
+                            },
+                            {
+                              "serviceCode": "FAIP105",
+                              "productName": "5 static IP addresses",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "PI"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "voice": [
+                        {
+                          "serviceIdentifier": "01011113339",
+                          "cupId": "",
+                          "isPrimary": "Y",
+                          "services": [
+                            {
+                              "serviceCode": "BELBUEX",
+                              "productName": "BEL 21CV Line Rental",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 0,
+                              "servicetype": "Core",
+                              "serviceStatus": "DI"
+                            },
+                            {
+                              "serviceCode": "BBELICB",
+                              "productName": "Call Barring Incoming",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "NP"
+                            },
+                            {
+                              "serviceCode": "BBELCDR",
+                              "productName": "Admin Call Divert",
+                              "billingStartDate": "DD-MM-YYYY",
+                              "MRC": 5,
+                              "servicetype": "Add-On",
+                              "serviceStatus": "PD"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
-    }
+      }
       );
   } else {
     return res.status(400).json({ message: "Invalid request structure" });
@@ -625,57 +724,67 @@ app.post("/getServiceStatus", (req, res) => {
         "sourceCorrelationId":"TTB-001",
          "services": [
               {
-                 "serviceType": "IAS",
-                 "serviceIdentifier": "123456789",
-                 "status": "A"
-              },
-              {
-                 "serviceType": "NBICS",
-                 "serviceIdentifier": "01011113334",
-                 "status": "AC"
-              },
-              {
-                 "serviceType": "NBICS",
-                 "serviceIdentifier": "01011113335",
-                 "status": "A"
-              },
-              {
-                 "serviceType": "IAS",
-                 "serviceIdentifier": "123456691",
-                "status": "AC"
-              },
-              {
-                 "serviceType": "NBICS",
-                 "serviceIdentifier": "01011113337",
-                "status": "Inactive"
-              },
-              {
-                 "serviceType": "NBICS",
-                 "serviceIdentifier": "01011113338",
-                "status": "PD"
-              },
-              {
-                 "serviceType": "IAS",
-                 "serviceIdentifier": "123456892",
+                "serviceType": "IAS",
+                "serviceIdentifier": "123456789",
                 "status": "A"
               },
               {
-                 "serviceType": "NBICS",
-                 "serviceIdentifier": "01011113336",
+                "serviceType": "NBICS",
+                "serviceIdentifier": "01011113334",
                 "status": "AC"
               },
               {
-                 "serviceType": "IAS",
-                 "serviceIdentifier": "123456893",
-                "status": "Inactive"
+                "serviceType": "NBICS",
+                "serviceIdentifier": "01011113335",
+                "status": "A"
               },
               {
-                 "serviceType": "NBICS",
-                 "serviceIdentifier": "01011113339",
-                "status": "Inactive"
+                "serviceType": "IAS",
+                "serviceIdentifier": "123456691",
+                "status": "AC"
+              },
+              {
+                "serviceType": "NBICS",
+                "serviceIdentifier": "01011113337",
+                "status": "CN"
+              },
+              {
+                "serviceType": "NBICS",
+                "serviceIdentifier": "01011113338",
+                "status": "PD"
+              },
+              {
+                "serviceType": "IAS",
+                "serviceIdentifier": "123456892",
+                "status": "TD"
+              },
+              {
+                "serviceType": "NBICS",
+                "serviceIdentifier": "01011113336",
+                "status": "NP"
+              },
+              {
+                "serviceType": "IAS",
+                "serviceIdentifier": "123456893",
+                "status": "PR"
+              },
+              {
+                "serviceType": "NBICS",
+                "serviceIdentifier": "01011113339",
+                "status": "N"
+              },
+              {
+                "serviceType": "IAS",
+                "serviceIdentifier": "4574930295",
+                "status": "PI"
+              },
+              {
+                "serviceType": "NBICS",
+                "serviceIdentifier": "01011113341",
+                "status": "DI"
               }
            ]
-        }        
+      }       
     );
   }
 });
